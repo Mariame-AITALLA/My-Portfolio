@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Oswald:wght@300&display=swap');
+
+
+body {
+	background-color: rosybrown;
+	padding: 0 2%;
+	margin: 0;
+}
+
+nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	background-color:  rosybrown;
+	opacity: 0.5;
+	position: sticky;
+	top: 0;
+	font-size: larger;
+}
+nav .profile {
+	display: flex;
+	align-items: center;
+}
+nav .profile img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+nav .profile h1 {
+	margin-left: 50%;
+	font-size: 15px;
+
+}
+nav ul {
+	display: flex;
+	list-style-type: none;
+}
+nav ul li {
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+nav ul li a {
+	color: black;
+	text-decoration: none;
+}
+nav ul li a:hover {
+	color: white;
+}
+
+.titre {
+    margin-left: 40%;
+    margin-top: 5em;
+  
+}
+
+.titre1 {
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Style des cartes */
+.card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 40px);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles pour les cartes spécifiques */
+.intro {
+    background: #f9f9f9;
+    border-left: 5px solid #ff7e5f;
+}
+
+.nanomedicine {
+    background: #e0f7fa;
+    border-left: 5px solid #00acc1;
+}
+
+.applications {
+    background: #e8f5e9;
+    border-left: 5px solid #66bb6a;
+}
+
+.perspectives {
+    background: #fce4ec;
+    border-left: 5px solid #d81b60;
+}
+
+.resources {
+    background: #f3e5f5;
+    border-left: 5px solid #ab47bc;
+	text-align: center;
+	list-style-type: none;
+}
+
+.card-content {
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 1.8em;
+    margin-top: 0;
+    color: #333;
+}
+
+.card h3 {
+    font-size: 1.4em;
+    color: #333;
+}
+
+
+.plus {
+	height: 3em;
+    width: 12em;
+    border-radius:  5em;
+    background-color: lightcoral;
+}
+
+button {
+    height: 3em;
+    width: 8em;
+    background-color: lightcoral;
+    border-radius:  5em;
+    margin-top: -15%;
+    margin-left: 0em;
+    border-color: white;
+    -webkit-transition: all 1s ease; /* Safari et Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* Internet Explorer 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+
+button:hover {
+    -webkit-transform:scale(1.25); /* Safari et Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* Internet Explorer 9 */
+    -o-transform:scale(1.25); /* Opera */
+    transform:scale(1.25);
+
+}
+
+.savoir {
+    margin-top: 3em;
+    margin-left: 17em;
+}
+
+
+
+@media screen and (max-width: 700px) {
+	nav {
+		justify-content: center;
+	}
+	nav ul {
+		display: none;
+	}
+
+	.page-content .projects-section {
+		margin-top: 0%;
+	}
+	.page-content .projects-section h1 {
+		font-size: 1.5em;
+	}
+	.page-content .projects-section .project {
+		margin-right: 0;
+		margin-bottom: 20px;
+		max-width: 100%;
+	}
+	.page-content .projects-section .project .description {
+		font-size: 0.5em;
+	}
+
+}
